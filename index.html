@@ -57,54 +57,54 @@
             <h1>Reported posts</h1>
         </div>
     </main>
-    <section id="question">
+    <section id="boous-section" style="margin-top: 40px;">
         <div class="container">
-            <div class="row row-cols-1 row-cols-lg-2 g-4">
+            <div class="row row-cols-1 row-cols-lg-2 g-4" style="font-size: 18px;">
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card  h-100">
                         <div class="card-body">
-                            <h5 class="card-title fs-3">Local storage vs session storage difference?</h5>
+                            <h5 class="card-title mb-3 fs-3">জাভাস্ক্রিপ্ট কিভাবে কাজ করে?</h5>
                             <div>
-                                <h6 class="fw-bold">Local Storage</h6>
-                                <ul>
-                                    <li>The storage capacity of local storage is 5MB/10MB</li>
-                                    <li>Data are not transferred on each HTTP request</li>
-                                    <li>The client can only read local storage</li>
-                                    <li>Has no expiration date</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h6 class="fw-bold">Session Storage</h6>
-                                <ul>
-                                    <li>The storage capacity of session storage is 5MB</li>
-                                    <li>Data is gone when you close the browser tab</li>
-                                    <li>There is no transfer of data to the server</li>
-                                    <li>Has no Ssl support</li>
-                                </ul>
+                                <p class="card-text">প্রথমে ওয়েব ব্রাউজার একটি ওয়েব পেজ লোড করে, এইচটিএমএল পার্স করে
+                                    এবং
+                                    বিষয়বস্তু থেকে ডকুমেন্ট অবজেক্ট মডেল (DOM) নামে পরিচিত তৈরি করে। DOM
+                                    জাভাস্ক্রিপ্ট কোডে ওয়েব পৃষ্ঠার একটি লাইভ ভিউ উপস্থাপন করে। তারপরে ব্রাউজার HTML
+                                    এর সাথে লিঙ্ক করা সমস্ত কিছু যেমন ছবি এবং CSS ফাইলগুলি দখল করবে। CSS তথ্য CSS
+                                    পার্সার থেকে আসে। </p>
+                                <p class="card-text">
+                                    প্রথমে ওয়েব পেজ তৈরি করার জন্য এইচটিএমএল এবং সিএসএসকে DOM দ্বারা একত্রিত করা হয়।
+                                    তারপরে, ব্রাউজারের জাভাস্ক্রিপ্ট ইঞ্জিন জাভাস্ক্রিপ্ট ফাইল এবং ইনলাইন কোড লোড করে
+                                    কিন্তু কোডটি অবিলম্বে চালায় না। এটি এইচটিএমএল এবং সিএসএস লোডিং শেষ হওয়ার জন্য
+                                    অপেক্ষা করে।
+                                </p>
+                                <p class="card-text">একবার এটি হয়ে গেলে, কোডটি লেখার ক্রমে জাভাস্ক্রিপ্ট কার্যকর করা
+                                    হয়। এর ফলে DOM জাভাস্ক্রিপ্ট কোড দ্বারা আপডেট হয় এবং ব্রাউজার দ্বারা রেন্ডার করা
+                                    হয়।</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card  h-100">
+                    <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title mb-3 fs-3">How Does javascript Work?</h5>
+                            <h5 class="card-title fs-3">লোকাল স্টোরেজ এবং সেশন স্টোরেজের মধ্যে পার্থক্য?</h5>
                             <div>
-                                <p class="card-text">The web browser loads a web page, parses the HTML, and creates what
-                                    is
-                                    known as a Document Object Model (DOM) from the contents. The DOM presents a live
-                                    view
-                                    of the web page to your JavaScript code.</p>
-                                <p class="card-text">
-                                    The browser will then grab everything linked to the HTML, like images and CSS files.
-                                    The
-                                    CSS information comes from the CSS parser.</p>
-                                <p class="card-text">
-                                    The HTML and CSS are put together by the DOM to create the web page first. Then, the
-                                    browsers' JavaScript engine loads JavaScript files and inline code but does not run
-                                    the
-                                    code immediately. It waits for the HTML and CSS to finish loading.
-                                </p>
+                                <h5 class="fw-bold">লোকাল স্টোরেজ</h5>
+                                <ul>
+                                    <li>লোকাল স্টোরেজের স্টোরেজ ক্ষমতা 5MB/10MB</li>
+                                    <li>প্রতিটি HTTP অনুরোধে ডেটা স্থানান্তর করা হয় না</li>
+                                    <li>ক্লায়েন্ট শুধুমাত্র লোকাল স্টোরেজ পড়তে পারে</li>
+                                    <li>মেয়াদ শেষ হওয়ার তারিখ নেই</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">সেশন স্টোরেজ</h5>
+                                <ul>
+                                    <li>সেশন স্টোরেজের স্টোরেজ ক্ষমতা 5MB</li>
+                                    <li>ব্রাউজার ট্যাব বন্ধ করলে সেশন স্টোরেজের ডেটা চলে যায়</li>
+                                    <li>সার্ভারে ডেটা স্থানান্তর নেই</li>
+                                    <li>কোন SSL সমর্থন নেই</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
